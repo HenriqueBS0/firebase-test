@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Firebase</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: rgb(247, 247, 247);
+    }
+
+    #paineDeControle {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 15px;
+    }
+
+    .card {
+        grid-column: span 4;
+        background: rgb(255, 255, 255);
+        padding: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+
+    .card h2 {
+        color: rgb(126, 6, 238);
+    }
+
+    .card span {
+        font-size: 18px;
+        color: rgb(138, 138, 138);
+    }
+
+    .card .valor {
+        color: rgb(178, 96, 255);
+    }
+
+</style>
+<body>
+    <div id="paineDeControle">
+    <!-- Card template -->
+    <!-- <div class="card">
+        <h2>Sensor</h2>
+        <span>Umidade: <span class="valor">12%</span></span>
+        <span>Longitude: <span class="valor">-32.433434</span></span>
+        <span>Latitude: <span class="valor">-42.234234234</span></span>
+    </div> -->
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
